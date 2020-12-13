@@ -69,9 +69,11 @@ function BaseURLTreeModel() {
     }
 
     function updateChildData(node, index, element) {
+        //@chanper: For ./stream.mpd, 7 times
         const baseUrls = adapter.getBaseURLsFromElement(element);
 
         if (!node[index]) {
+            //@chanper: For ./stream.mpd, 7 times
             node[index] = new Node(baseUrls);
         } else {
             if (!objectUtils.areEqual(baseUrls, node[index].data.baseUrls)) {
@@ -92,6 +94,7 @@ function BaseURLTreeModel() {
 
         if (manifest && manifest.Period_asArray) {
             manifest.Period_asArray.forEach((p, pi) => {
+                //@chanper: p is element(Period), pi is index, and only one
                 updateChildData(root.children, pi, p);
 
                 if (p.AdaptationSet_asArray) {
@@ -113,6 +116,7 @@ function BaseURLTreeModel() {
                 }
             });
         }
+        // console.log(root);
     }
 
     function walk(callback, node) {

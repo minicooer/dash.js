@@ -192,7 +192,7 @@ function MetricsModel(config) {
             delete vo.interval;
             delete vo.trace;
         }
-
+        // console.log(vo);
         pushAndNotify(mediaType, MetricsConstants.HTTP_REQUEST, vo);
     }
 
@@ -221,7 +221,6 @@ function MetricsModel(config) {
         let vo = new BufferLevel();
         vo.t = t;
         vo.level = level;
-
         pushAndNotify(mediaType, MetricsConstants.BUFFER_LEVEL, vo);
     }
 

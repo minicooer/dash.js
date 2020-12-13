@@ -59,6 +59,7 @@ function TimeSyncController() {
     }
 
     function initialize(timingSources, useManifestDateHeader) {
+        //@chanper: timingSources = [], use = true
         useManifestDateHeaderTimeSource = useManifestDateHeader;
         offsetToDeviceTimeMs = 0;
         isSynchronizing = false;
@@ -271,7 +272,7 @@ function TimeSyncController() {
     function checkForDateHeader() {
         let dateHeaderValue = dashMetrics.getLatestMPDRequestHeaderValueByID('Date');
         let dateHeaderTime = dateHeaderValue !== null ? new Date(dateHeaderValue).getTime() : Number.NaN;
-
+        //@chanper: dateHeaderTime = NaN
         if (!isNaN(dateHeaderTime)) {
             setOffsetMs(dateHeaderTime - new Date().getTime());
             completeTimeSyncSequence(false, dateHeaderTime / 1000, offsetToDeviceTimeMs);
@@ -281,6 +282,7 @@ function TimeSyncController() {
     }
 
     function completeTimeSyncSequence(failed, time, offset) {
+        //@chanper: time is undefined, offset is undefined
         setIsSynchronizing(false);
         eventBus.trigger(Events.TIME_SYNCHRONIZATION_COMPLETED, {
             time: time,
@@ -294,7 +296,7 @@ function TimeSyncController() {
     }
 
     function attemptSync(sources, sourceIndex) {
-
+        //@chanper: sources = []
         // if called with no sourceIndex, use zero (highest priority)
         let  index = sourceIndex || 0;
 
@@ -306,6 +308,8 @@ function TimeSyncController() {
         // callback to emit event to listeners
         const onComplete = function (time, offset) {
             let failed = !time || !offset;
+
+            //@chanper: Go CheckForDateHeader()
             if (failed && useManifestDateHeaderTimeSource) {
                 //Before falling back to binary search , check if date header exists on MPD. if so, use for a time source.
                 checkForDateHeader();

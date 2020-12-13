@@ -50,8 +50,9 @@ function URIFragmentModel() {
         URIFragmentDataVO = new URIFragmentData();
 
         if (!uri) return null;
-
+        //e.g. uri = http://dash.edgesuite.net/akamai/bbb_30fps/bbb_with_multiple_tiled_thumbnails.mpd
         const hashIndex = uri.indexOf('#');
+
         if (hashIndex !== -1) {
             const fragments = uri.substr(hashIndex + 1).split('&');
             for (let i = 0, len = fragments.length; i < len; ++i) {

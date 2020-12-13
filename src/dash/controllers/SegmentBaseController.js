@@ -96,6 +96,7 @@ function SegmentBaseController(config) {
     }
 
     function onInitSegmentBaseNeeded(e) {
+        console.log('SegmentBaseController.onInitSegmentBaseNeeded()');
         if (isWebM(e.mimeType)) {
             webmSegmentBaseLoader.loadInitialization(e.streamId, e.mediaType, e.representation);
         } else {
@@ -104,6 +105,7 @@ function SegmentBaseController(config) {
     }
 
     function onSegmentsListSegmentBaseNeeded(e) {
+        console.log('SegmentBaseController.onSegmentListSegmentBaseNeeded()');
         if (isWebM(e.mimeType)) {
             webmSegmentBaseLoader.loadSegments(e.streamId, e.mediaType, e.representation, e.representation ? e.representation.indexRange : null, e.callback);
         } else {

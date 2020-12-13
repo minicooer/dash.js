@@ -174,10 +174,12 @@ function ScheduleController(config) {
         validateExecutedFragmentRequest();
 
         const isReplacement = replaceRequestArray.length > 0;
+        //@chanper: replacingBuffer = false, lastInitQuality = NaN fisrt then someValue, switchTrack = false, isReplacement = false, topQoalityChanged = false, execute() return if bufferLevel < target
         if (replacingBuffer || isNaN(lastInitQuality) || switchTrack || isReplacement ||
             hasTopQualityChanged(type, streamInfo.id) ||
             bufferLevelRule.execute(type, currentRepresentationInfo, hasVideoTrack)) {
             const getNextFragment = function () {
+                // @chanper: switchTrack = false, replacingBuffer = false;
                 if ((currentRepresentationInfo.quality !== lastInitQuality || switchTrack) && (!replacingBuffer)) {
                     if (switchTrack) {
                         logger.debug('Switch track for ' + type + ', representation id = ' + currentRepresentationInfo.id);
@@ -216,6 +218,7 @@ function ScheduleController(config) {
             };
 
             setFragmentProcessState(true);
+            //@chanper: enter
             if (!isReplacement && checkPlaybackQuality) {
                 abrController.checkPlaybackQuality(type);
             }
@@ -245,6 +248,7 @@ function ScheduleController(config) {
             threshold: 0
         })[0];
 
+        // @chanper: pass
         if (request && replaceRequestArray.indexOf(request) === -1 && !adapter.getIsTextTrack(mimeType)) {
             const fastSwitchModeEnabled = settings.get().streaming.fastSwitchEnabled;
             const bufferLevel = bufferController.getBufferLevel();
@@ -369,12 +373,14 @@ function ScheduleController(config) {
     }
 
     function onBytesAppended(e) {
+        // @chanper: replacingBuffer = false;
         if (replacingBuffer && !isNaN(e.startTime)) {
             replacingBuffer = false;
             fragmentModel.addExecutedRequest(mediaRequest);
         }
 
         setFragmentProcessState(false);
+        // @chanper: isReplacementRequest = false;
         if (isReplacementRequest && !isNaN(e.startTime)) {
             //replace requests process is in progress, call schedule in n seconds.
             //it is done in order to not add a fragment at the new quality at the end of the buffer before replace process is over.

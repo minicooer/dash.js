@@ -112,7 +112,6 @@ function DashMetrics(config) {
     function getCurrentBufferLevel(type) {
         const metrics = metricsModel.getMetricsFor(type, true);
         const metric = getCurrent(metrics, MetricsConstants.BUFFER_LEVEL);
-
         if (metric) {
             return Round10.round10(metric.level / 1000, -3);
         }
@@ -198,7 +197,6 @@ function DashMetrics(config) {
         if (!metrics) {
             return [];
         }
-
         return !!metrics.HttpList ? metrics.HttpList : [];
     }
 

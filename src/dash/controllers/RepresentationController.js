@@ -106,9 +106,7 @@ function RepresentationController(config) {
         checkConfig();
 
         startDataUpdate();
-
         voAvailableRepresentations = availableRepresentations;
-
         currentVoRepresentation = getRepresentationForQuality(quality);
         realAdaptation = newRealAdaptation;
 

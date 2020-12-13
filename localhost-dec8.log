@@ -1,0 +1,174 @@
+DevTools failed to load SourceMap: Could not load content for chrome-extension://ncennffkjdiamlpmcbajkmaiiiddgioo/js/xl-content.js.map: HTTP error: status code 404, net::ERR_UNKNOWN_URL_SCHEME
+core\Debug.js:168 [51][DashParser] Parsing complete: ( xml2json: 4.51ms, objectiron: 0.240ms, total: 0.00475s) 
+core\Debug.js:168 [56][StreamController] Switch to stream defaultId_0. Seektime is NaN, current playback time is null 
+core\Debug.js:168 [57][StreamController] Seamless period switch is set to false 
+core\Debug.js:168 [58][ManifestUpdater] Manifest has been refreshed at Tue Dec 08 2020 20:57:26 GMT+0800 (China Standard Time)[1607432246.104]  
+core\Debug.js:168 [114][AbrController] [video] switch from 0 to 9/9 (buffer: 0) . 
+core\Debug.js:168 [116][Stream] No text data. 
+core\Debug.js:168 [116][Stream] No fragmentedText data. 
+core\Debug.js:168 [116][Stream] No embeddedText data. 
+core\Debug.js:168 [116][Stream] No muxed data. 
+core\Debug.js:168 [126][PlaybackController] Native video element event: play 
+core\Debug.js:168 [127][PlaybackController] Native video element event: waiting 
+core\Debug.js:168 [137][BufferController][video] Init fragment finished loading saving to video's init cache 
+core\Debug.js:168 [138][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_0.m4v  
+core\Debug.js:168 [142][BufferController][audio] Init fragment finished loading saving to audio's init cache 
+core\Debug.js:168 [142][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_0.m4a  
+core\Debug.js:168 [145][PlaybackController] Native video element event: loadedmetadata 
+core\Debug.js:168 [145][ScheduleController][video] Top quality video index has changed from undefined to 9 
+core\Debug.js:168 [149][ScheduleController][audio] Top quality audio index has changed from undefined to 0 
+core\Debug.js:168 [165][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_1.m4a  
+core\Debug.js:168 [176][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_1.m4v  
+core\Debug.js:168 [218][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_2.m4v  
+core\Debug.js:168 [258][PlaybackController] Native video element event: playing 
+core\Debug.js:168 [345][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_3.m4v  
+core\Debug.js:168 [403][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_4.m4v  
+core\Debug.js:168 [425][AbrController] [video] switching from throughput to buffer occupancy ABR rule (buffer: 15.891). 
+core\Debug.js:168 [460][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_5.m4v  
+core\Debug.js:168 [508][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_6.m4v  
+core\Debug.js:168 [554][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_7.m4v  
+core\Debug.js:168 [616][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_8.m4v  
+core\Debug.js:168 [676][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_9.m4v  
+core\Debug.js:168 [701][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_2.m4a  
+core\Debug.js:168 [713][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_3.m4a  
+core\Debug.js:168 [727][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_4.m4a  
+core\Debug.js:168 [728][AbrController] [audio] switching from throughput to buffer occupancy ABR rule (buffer: 15.630). 
+core\Debug.js:168 [737][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_5.m4a  
+core\Debug.js:168 [761][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_10.m4v  
+core\Debug.js:168 [784][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_6.m4a  
+core\Debug.js:168 [800][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_7.m4a  
+core\Debug.js:168 [808][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_8.m4a  
+core\Debug.js:168 [821][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_9.m4a  
+core\Debug.js:168 [832][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_10.m4a  
+core\Debug.js:168 [838][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_11.m4v  
+core\Debug.js:168 [884][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_12.m4v  
+core\Debug.js:168 [935][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_13.m4v  
+core\Debug.js:168 [988][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_14.m4v  
+core\Debug.js:168 [1122][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_15.m4v  
+core\Debug.js:168 [1194][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_16.m4v  
+core\Debug.js:168 [1367][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_11.m4a  
+core\Debug.js:168 [1378][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_12.m4a  
+core\Debug.js:168 [1388][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_13.m4a  
+core\Debug.js:168 [1402][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_14.m4a  
+core\Debug.js:168 [1414][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_15.m4a  
+core\Debug.js:168 [1426][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_16.m4a  
+core\Debug.js:168 [4819][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_17.m4v  
+core\Debug.js:168 [4947][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_17.m4a  
+core\Debug.js:168 [8928][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_18.m4v  
+core\Debug.js:168 [9025][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_18.m4a  
+core\Debug.js:168 [12556][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_19.m4v  
+core\Debug.js:168 [13081][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_19.m4a  
+core\Debug.js:168 [16658][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_20.m4v  
+core\Debug.js:168 [17145][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_20.m4a  
+core\Debug.js:168 [17998][PlaybackController] Requesting seek to time: 146 
+core\Debug.js:168 [18000][PlaybackController] Seeking to: 146 
+core\Debug.js:168 [18003][PlaybackController] Native video element event: waiting 
+core\Debug.js:168 [18011][AbrController] [video] switching from buffer occupancy to throughput ABR rule (buffer: 0.000). 
+core\Debug.js:168 [18019][AbrController] [audio] switching from buffer occupancy to throughput ABR rule (buffer: 0.000). 
+core\Debug.js:168 [18044][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_37.m4v  
+core\Debug.js:168 [18090][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_38.m4v  
+core\Debug.js:168 [18132][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_39.m4v  
+core\Debug.js:168 [18183][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_40.m4v  
+core\Debug.js:168 [18204][AbrController] [video] switching from throughput to buffer occupancy ABR rule (buffer: 14.000). 
+core\Debug.js:168 [18238][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_41.m4v  
+core\Debug.js:168 [18535][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_37.m4a  
+core\Debug.js:168 [18541][PlaybackController] Native video element event: seeked 
+core\Debug.js:168 [18543][PlaybackController] Native video element event: playing 
+core\Debug.js:168 [18549][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_38.m4a  
+core\Debug.js:168 [18559][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_39.m4a  
+core\Debug.js:168 [18572][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_40.m4a  
+core\Debug.js:168 [18572][AbrController] [audio] switching from throughput to buffer occupancy ABR rule (buffer: 14.410). 
+core\Debug.js:168 [18582][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_41.m4a  
+core\Debug.js:168 [30805][AbrController] [video] switching from buffer occupancy to throughput ABR rule (buffer: 5.792). 
+core\Debug.js:168 [30978][PlaybackController] Requesting seek to time: 456 
+core\Debug.js:168 [30980][PlaybackController] Seeking to: 456 
+core\Debug.js:168 [30983][ScheduleController][video] onFragmentLoadingAbandoned request: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_42.m4v has been aborted 
+core\Debug.js:168 [30984][PlaybackController] Native video element event: waiting 
+core\Debug.js:168 [30988][AbrController] [audio] switching from buffer occupancy to throughput ABR rule (buffer: 0.000). 
+core\Debug.js:168 [32832][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_114.m4a  
+core\Debug.js:168 [33193][ScheduleController][video] onFragmentLoadingAbandoned request: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_3840x2160_12000k/bbb_30fps_3840x2160_12000k_115.m4v has been aborted 
+core\Debug.js:168 [33193][AbrController] [video] switch from 9 to 0/9 (buffer: 0) . 
+core\Debug.js:168 [33202][BufferController][video] Init fragment finished loading saving to video's init cache 
+core\Debug.js:168 [33203][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_200k/bbb_30fps_320x180_200k_0.m4v  
+core\Debug.js:168 [33616][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_115.m4a  
+core\Debug.js:168 [34707][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_200k/bbb_30fps_320x180_200k_116.m4v  
+core\Debug.js:168 [34708][PlaybackController] Requesting internal seek to time: 460 
+core\Debug.js:168 [34733][PlaybackController] Native video element event: seeked 
+core\Debug.js:168 [34734][PlaybackController] Native video element event: playing 
+core\Debug.js:168 [35735][PlaybackController] Native video element event: waiting 
+core\Debug.js:168 [35736][PlaybackController] Native video element event: ratechange:  0 
+core\Debug.js:168 [35939][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_116.m4a  
+core\Debug.js:168 [35940][PlaybackController] Native video element event: playing 
+core\Debug.js:168 [35941][PlaybackController] Native video element event: ratechange:  1 
+core\Debug.js:168 [36126][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_200k/bbb_30fps_320x180_200k_117.m4v  
+core\Debug.js:168 [36129][AbrController] [video] switch from 0 to 1/9 (buffer: 6.869) . 
+core\Debug.js:168 [36135][BufferController][video] Init fragment finished loading saving to video's init cache 
+core\Debug.js:168 [36136][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_400k/bbb_30fps_320x180_400k_0.m4v  
+core\Debug.js:168 [38047][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_117.m4a  
+core\Debug.js:168 [38973][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_400k/bbb_30fps_320x180_400k_118.m4v  
+core\Debug.js:168 [39184][PlaybackController] Requesting seek to time: 614 
+core\Debug.js:168 [39187][PlaybackController] Seeking to: 614 
+core\Debug.js:168 [39188][ScheduleController][video] onFragmentLoadingAbandoned request: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_400k/bbb_30fps_320x180_400k_119.m4v has been aborted 
+core\Debug.js:168 [39189][ScheduleController][audio] onFragmentLoadingAbandoned request: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_118.m4a has been aborted 
+core\Debug.js:168 [39190][PlaybackController] Native video element event: waiting 
+core\Debug.js:168 [39696][AbrController] [video] switch from 1 to 8/9 (buffer: 0) . 
+core\Debug.js:168 [41353][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_154.m4a  
+core\Debug.js:168 [41587][BufferController][video] Init fragment finished loading saving to video's init cache 
+core\Debug.js:168 [41587][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_1920x1080_8000k/bbb_30fps_1920x1080_8000k_0.m4v  
+core\Debug.js:168 [42900][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_155.m4a  
+core\Debug.js:168 [43188][ScheduleController][video] onFragmentLoadingAbandoned request: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_1920x1080_8000k/bbb_30fps_1920x1080_8000k_154.m4v has been aborted 
+core\Debug.js:168 [43188][AbrController] [video] switch from 8 to 2/9 (buffer: 0) . 
+core\Debug.js:168 [43197][BufferController][video] Init fragment finished loading saving to video's init cache 
+core\Debug.js:168 [43197][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_480x270_600k/bbb_30fps_480x270_600k_0.m4v  
+core\Debug.js:168 [45827][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_480x270_600k/bbb_30fps_480x270_600k_155.m4v  
+core\Debug.js:168 [45829][PlaybackController] Requesting internal seek to time: 616 
+core\Debug.js:168 [45844][PlaybackController] Native video element event: seeked 
+core\Debug.js:168 [45845][PlaybackController] Native video element event: playing 
+core\Debug.js:168 [49077][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_480x270_600k/bbb_30fps_480x270_600k_156.m4v  
+core\Debug.js:168 [49970][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_156.m4a  
+core\Debug.js:168 [52386][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_480x270_600k/bbb_30fps_480x270_600k_157.m4v  
+core\Debug.js:168 [54553][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_480x270_600k/bbb_30fps_480x270_600k_158.m4v  
+core\Debug.js:168 [54556][AbrController] [video] switch from 2 to 1/9 (buffer: 7.342) . 
+core\Debug.js:168 [54557][BufferController][video] Append Init fragment video  with representationId: bbb_30fps_320x180_400k  and quality: 1 , data size: 705 
+core\Debug.js:168 [55104][PlaybackController] Native video element event: waiting 
+core\Debug.js:168 [55105][PlaybackController] Native video element event: ratechange:  0 
+core\Debug.js:168 [56972][ScheduleController][video] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps_320x180_400k/bbb_30fps_320x180_400k_159.m4v  
+core\Debug.js:168 [56976][Stream] onBufferingCompleted - One streamProcessor has finished but audio one is not buffering completed 
+doLog @ core\Debug.js:168
+warn @ core\Debug.js:131
+onBufferingCompleted @ streaming\Stream.js:707
+(anonymous) @ core\EventBus.js:124
+trigger @ core\EventBus.js:124
+triggerEvent @ streaming\controllers\BufferController.js:846
+checkIfBufferingCompleted @ streaming\controllers\BufferController.js:560
+onStreamCompleted @ streaming\controllers\BufferController.js:755
+(anonymous) @ core\EventBus.js:124
+trigger @ core\EventBus.js:124
+executeRequest @ streaming\models\FragmentModel.js:208
+processMediaRequest @ streaming\controllers\ScheduleController.js:292
+onMediaFragmentNeeded @ streaming\StreamProcessor.js:458
+(anonymous) @ core\EventBus.js:124
+trigger @ core\EventBus.js:124
+getNextFragment @ streaming\controllers\ScheduleController.js:209
+schedule @ streaming\controllers\ScheduleController.js:223
+setTimeout (async)
+startScheduleTimer @ streaming\controllers\ScheduleController.js:271
+onBytesAppended @ streaming\controllers\ScheduleController.js:392
+(anonymous) @ core\EventBus.js:124
+trigger @ core\EventBus.js:124
+triggerEvent @ streaming\controllers\BufferController.js:846
+onAppended @ streaming\controllers\BufferController.js:311
+afterSuccess @ streaming\SourceBufferSink.js:266
+executeCallback @ streaming\SourceBufferSink.js:347
+updateEndHandler @ streaming\SourceBufferSink.js:364
+core\Debug.js:168 [56977][ScheduleController][video] Stream defaultId_0 is complete 
+core\Debug.js:168 [57440][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_157.m4a  
+core\Debug.js:168 [57442][PlaybackController] Native video element event: playing 
+core\Debug.js:168 [57443][PlaybackController] Native video element event: ratechange:  1 
+core\Debug.js:168 [58026][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_158.m4a  
+core\Debug.js:168 [60107][ScheduleController][audio] OnFragmentLoadingCompleted - Url: http://dash.edgesuite.net/akamai/bbb_30fps/bbb_a64k/bbb_a64k_159.m4a  
+core\Debug.js:168 [60110][StreamController] [onStreamBufferingCompleted] calls signalEndOfStream of mediaSourceController. 
+core\Debug.js:168 [60110][MediaSourceController] call to mediaSource endOfStream 
+core\Debug.js:168 [60111][ScheduleController][audio] Stream defaultId_0 is complete 
+core\Debug.js:168 [66758][PlaybackController] Native video element event: pause 
+core\Debug.js:168 [66759][PlaybackController] Native video element event: ended 

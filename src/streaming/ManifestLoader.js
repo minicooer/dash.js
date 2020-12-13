@@ -95,6 +95,7 @@ function ManifestLoader(config) {
         // Analyze manifest content to detect protocol and select appropriate parser
         if (data.indexOf('SmoothStreamingMedia') > -1) {
             //do some business to transform it into a Dash Manifest
+            //chanper: not Dash, but mss
             if (mssHandler) {
                 parser = mssHandler.createMssParser();
                 mssHandler.registerEvents();
@@ -108,12 +109,12 @@ function ManifestLoader(config) {
     }
 
     function load(url) {
-
         const request = new TextRequest(url, HTTPRequest.MPD_TYPE);
-
         urlLoader.load({
             request: request,
             success: function (data, textStatus, responseURL) {
+                //data is returned mpd data, textStatus is OK, reponseURL is mpd file URL
+
                 // Manage situations in which success is called after calling reset
                 if (!xlinkController) return;
 
@@ -126,6 +127,10 @@ function ManifestLoader(config) {
                 if (responseURL && responseURL !== url) {
                     baseUri = urlUtils.parseBaseUrl(responseURL);
                     actualUrl = responseURL;
+                    // url: ./stream.mpd
+                    // responseUrl: http://localhost:3000/MyDemo/stream.mpd
+                    // baseUri: http://localhost:3000/MyDemo/
+                    // actualUrl: http://localhost:3000/MyDemo/stream.mpd
                 } else {
                     // usually this case will be caught and resolved by
                     // responseURL above but it is not available for IE11 and Edge/12 and Edge/13
@@ -169,7 +174,6 @@ function ManifestLoader(config) {
                     });
                     return;
                 }
-
                 if (manifest) {
                     manifest.url = actualUrl || url;
 
@@ -188,6 +192,7 @@ function ManifestLoader(config) {
                     manifest.baseUri = baseUri;
                     manifest.loadedTime = new Date();
                     xlinkController.resolveManifestOnLoad(manifest);
+                    //manifest keep same
 
                     eventBus.trigger(Events.ORIGINAL_MANIFEST_LOADED, { originalManifest: data });
                 } else {

@@ -151,7 +151,6 @@ function ThroughputHistory(config) {
             arr = latencyDict[mediaType];
             sampleSize = AVERAGE_LATENCY_SAMPLE_AMOUNT;
         }
-
         if (!arr) {
             sampleSize = 0;
         } else if (sampleSize >= arr.length) {
@@ -160,6 +159,7 @@ function ThroughputHistory(config) {
             // if throughput samples vary a lot, average over a wider sample
             for (let i = 1; i < sampleSize; ++i) {
                 const ratio = arr[arr.length - i] / arr[arr.length - i - 1];
+                //change ratio is larger than 1.3, then sampleSize+1
                 if (ratio >= THROUGHPUT_INCREASE_SCALE || ratio <= 1 / THROUGHPUT_DECREASE_SCALE) {
                     sampleSize += 1;
                     if (sampleSize === arr.length) { // cannot increase sampleSize beyond arr.length
@@ -174,6 +174,15 @@ function ThroughputHistory(config) {
 
     function getAverage(isThroughput, mediaType, isDynamic) {
         // only two moving average methods defined at the moment
+        //
+        // * The sliding window moving average method computes the average throughput using the last four segments downloaded.
+        // * If the stream is live (as opposed to VOD), then only the last three segments are used.
+        // * If wide variations in throughput are detected, the number of segments can be dynamically increased to avoid oscillations.
+        // *
+        // * The exponentially weighted moving average (EWMA) method computes the average using exponential smoothing.
+        // * Two separate estimates are maintained, a fast one with a three-second half life and a slow one with an eight-second half life.
+        // * The throughput estimate at any time is the minimum of the fast and slow estimates.
+        // * This allows a fast reaction to a bandwidth drop and prevents oscillations on bandwidth spikes.
         return settings.get().streaming.abr.movingAverageMethod !== Constants.MOVING_AVERAGE_SLIDING_WINDOW ?
             getAverageEwma(isThroughput, mediaType) : getAverageSlidingWindow(isThroughput, mediaType, isDynamic);
     }
@@ -187,8 +196,9 @@ function ThroughputHistory(config) {
             return NaN;
         }
 
+        //only maintain the last sampleSize thoughtputHistory
         arr = arr.slice(-sampleSize); // still works if sampleSize too large
-        // arr.length >= 1
+        // arr.length >= 1, simple add them all and take average
         return arr.reduce((total, elem) => total + elem) / arr.length;
     }
 

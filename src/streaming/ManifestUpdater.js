@@ -144,9 +144,9 @@ function ManifestUpdater() {
     }
 
     function update(manifest) {
-
         // See DASH-IF IOP v4.3 section 4.6.4 "Transition Phase between Live and On-Demand"
         // Stop manifest update, ignore static manifest and signal end of dynamic stream to detect end of stream
+        //@chanper: first time manifestModel.getValue() is undefined.
         if (manifestModel.getValue() && manifestModel.getValue().type === DashConstants.DYNAMIC && manifest.type === DashConstants.STATIC) {
             eventBus.trigger(Events.DYNAMIC_TO_STATIC);
             isUpdating = false;
@@ -158,7 +158,9 @@ function ManifestUpdater() {
 
         const date = new Date();
         const latencyOfLastUpdate = (date.getTime() - manifest.loadedTime.getTime()) / 1000;
+        //refreshDelay is NaN
         refreshDelay = adapter.getManifestUpdatePeriod(manifest, latencyOfLastUpdate);
+
         // setTimeout uses a 32 bit number to store the delay. Any number greater than it
         // will cause event associated with setTimeout to trigger immediately
         if (refreshDelay * 1000 > 0x7FFFFFFF) {
@@ -192,11 +194,13 @@ function ManifestUpdater() {
     }
 
     function onPlaybackStarted (/*e*/) {
+        // console.log("ManifestUpdater: onPlaybackStarted");
         isPaused = false;
         startManifestRefreshTimer();
     }
 
     function onPlaybackPaused(/*e*/) {
+        // console.log("ManifestUpdater: onPlaybackPaused");
         isPaused = !settings.get().streaming.scheduleWhilePaused;
 
         if (isPaused) {
@@ -205,6 +209,7 @@ function ManifestUpdater() {
     }
 
     function onStreamsComposed(/*e*/) {
+        // console.log("ManifestUpdater: onStreamComposed.");
         // When streams are ready we can consider manifest update completed. Resolve the update promise.
         isUpdating = false;
     }

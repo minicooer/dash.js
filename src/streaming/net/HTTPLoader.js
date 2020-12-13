@@ -98,6 +98,8 @@ function HTTPLoader(cfg) {
         }
 
         const handleLoaded = function (success) {
+            // console.log("handleLoaded");
+
             needFailureReport = false;
 
             request.requestStartDate = requestStartTime;
@@ -118,6 +120,8 @@ function HTTPLoader(cfg) {
         };
 
         const onloadend = function () {
+            // console.log("onloadend");
+
             if (requests.indexOf(httpRequest) === -1) {
                 return;
             } else {
@@ -157,6 +161,8 @@ function HTTPLoader(cfg) {
         };
 
         const progress = function (event) {
+            // console.log("progress");
+
             const currentTime = new Date();
 
             if (firstProgress) {
@@ -189,6 +195,8 @@ function HTTPLoader(cfg) {
         };
 
         const onload = function () {
+            // console.log("onload");
+
             if (httpRequest.response.status >= 200 && httpRequest.response.status <= 299) {
                 handleLoaded(true);
 
@@ -203,12 +211,16 @@ function HTTPLoader(cfg) {
         };
 
         const onabort = function () {
+            // console.log("onabort");
+
             if (config.abort) {
                 config.abort(request);
             }
         };
 
         const ontimeout = function (event) {
+            // console.log("ontimeout");
+
             let timeoutMessage;
             if (event.lengthComputable) {
                 let percentageComplete = (event.loaded / event.total) * 100;
@@ -220,6 +232,7 @@ function HTTPLoader(cfg) {
         };
 
         let loader;
+        //@chanper: always get XHRLoader, cause useFetch is always false
         if (useFetch && window.fetch && request.responseType === 'arraybuffer' && request.type === HTTPRequest.MEDIA_SEGMENT_TYPE) {
             loader = FetchLoader(context).create({
                 requestModifier: requestModifier,
@@ -232,11 +245,13 @@ function HTTPLoader(cfg) {
         }
 
         let modifiedUrl = requestModifier.modifyRequestURL(request.url);
+        //@chanper: additionalQueryParameter = []
         const additionalQueryParameter = _getAdditionalQueryParameter(request);
         modifiedUrl = Utils.addAditionalQueryParameterToUrl(modifiedUrl, additionalQueryParameter);
+        //@chanper: verb = GET
         const verb = request.checkExistenceOnly ? HTTPRequest.HEAD : HTTPRequest.GET;
+        //@chanper: withCredentials = false
         const withCredentials = mediaPlayerModel.getXHRWithCredentialsForType(request.type);
-
 
         httpRequest = {
             url: modifiedUrl,
@@ -253,8 +268,11 @@ function HTTPLoader(cfg) {
             timeout: requestTimeout
         };
 
+        //@chanper: 1)mpd; 2)m4v; 3)m4a;
+
         // Adds the ability to delay single fragment loading time to control buffer.
         let now = new Date().getTime();
+        //@chanper: always no delay
         if (isNaN(request.delayLoadingTime) || now >= request.delayLoadingTime) {
             // no delay - just send
             requests.push(httpRequest);
@@ -308,6 +326,7 @@ function HTTPLoader(cfg) {
                 config,
                 mediaPlayerModel.getRetryAttemptsForType(
                     config.request.type
+                    //for MPD is 500, InitializationSegment is 3
                 )
             );
         } else {

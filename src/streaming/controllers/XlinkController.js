@@ -83,6 +83,7 @@ function XlinkController(config) {
      * @param {Object} mpd - the manifest
      */
     function resolveManifestOnLoad(mpd) {
+        //@chanper: now mpd is already json format
         let elements;
         // First resolve all periods, so unnecessary requests inside onLoad Periods with Default content are avoided
         converter = new X2JS({
@@ -98,6 +99,7 @@ function XlinkController(config) {
 
         manifest = mpd;
         elements = getElementsToResolve(manifest.Period_asArray, manifest, DashConstants.PERIOD, RESOLVE_TYPE_ONLOAD);
+        //elements = []
         resolve(elements, DashConstants.PERIOD, RESOLVE_TYPE_ONLOAD);
     }
 
@@ -119,6 +121,7 @@ function XlinkController(config) {
         resolveObject.type = type;
         resolveObject.resolveType = resolveType;
         // If nothing to resolve, directly call allElementsLoaded
+        //@chanper: length = 0
         if (resolveObject.elements.length === 0) {
             onXlinkAllElementsLoaded(resolveObject);
         }
@@ -164,6 +167,7 @@ function XlinkController(config) {
         let i,
             obj;
 
+        //@chanper: resolveObject.elements.length = 0, nothing done in mergeElementsBack
         mergeElementsBack(resolveObject);
         if (resolveObject.resolveType === RESOLVE_TYPE_ONACTUATE) {
             eventBus.trigger(Events.XLINK_READY, { manifest: manifest });
@@ -172,8 +176,12 @@ function XlinkController(config) {
             switch (resolveObject.type) {
                 // Start resolving the other elements. We can do Adaptation Set and EventStream in parallel
                 case DashConstants.PERIOD:
+                    //@chanper: Period length = 1
                     for (i = 0; i < manifest[DashConstants.PERIOD + '_asArray'].length; i++) {
+                        //@chanper: obj = Period_asArray[0] i.e period[0]
                         obj = manifest[DashConstants.PERIOD + '_asArray'][i];
+
+                        //@chanper: elements keep same [] and no event_stream, so nothing to do here
                         if (obj.hasOwnProperty(DashConstants.ADAPTATION_SET + '_asArray')) {
                             elements = elements.concat(getElementsToResolve(obj[DashConstants.ADAPTATION_SET + '_asArray'], obj, DashConstants.ADAPTATION_SET, RESOLVE_TYPE_ONLOAD));
                         }
@@ -197,6 +205,9 @@ function XlinkController(config) {
         let element,
             i,
             xlinkObject;
+
+        //@chanper: no xlink property, so nothing to do in this function.
+
         // first remove all the resolve-to-zero elements
         for (i = elements.length - 1; i >= 0; i--) {
             element = elements[i];
@@ -212,6 +223,7 @@ function XlinkController(config) {
                 toResolve.push(xlinkObject);
             }
         }
+
         return toResolve;
     }
 

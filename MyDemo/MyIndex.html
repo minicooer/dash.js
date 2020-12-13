@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Dash Demo</title>
+    <script src="../build/temp/dash.all.debug.js"></script>
+    <link href="#" rel="shortcut icon"/>
+    <link href="../contrib/akamai/controlbar/controlbar.css" rel="stylesheet">
+    <script src="../contrib/akamai/controlbar/ControlBar.js"></script>
+    <script src="../samples/advanced/abr/LowestBitrateRule.js"></script>
+    <style>
+        video {
+            width: 100%;
+        }
+
+        .dash-video-player {
+            position: relative; /* This position relative is needed to position the menus */
+            width: 640px;
+            margin: 0 auto;
+        }
+    </style>
+    </style>
+</head>
+<body onload="init()">
+<div class="dash-video-player">
+    <div class="videoContainer" id="videoContainer">
+        <video id="videoPlayer" preload="auto"></video>
+
+        <!-- Video Controller -->
+        <div class="video-controller unselectable" id="videoController">
+            <div class="btn-play-pause" id="playPauseBtn" title="Play/Pause">
+                <span class="icon-play" id="iconPlayPause"></span>
+            </div>
+            <span class="time-display" id="videoTime">00:00:00</span>
+            <div class="btn-fullscreen control-icon-layout" id="fullscreenBtn" title="Fullscreen">
+                <span class="icon-fullscreen-enter"></span>
+            </div>
+            <div class="control-icon-layout" id="bitrateListBtn" title="Bitrate List">
+                <span class="icon-bitrate"></span>
+            </div>
+            <input class="volumebar" id="volumebar" max="1" min="0" step=".01" type="range" value="1"/>
+            <div class="btn-mute control-icon-layout" id="muteBtn" title="Mute">
+                <span class="icon-mute-off" id="iconMute"></span>
+            </div>
+            <div class="control-icon-layout" id="trackSwitchBtn" title="A/V Tracks">
+                <span class="icon-tracks"></span>
+            </div>
+            <div class="btn-caption control-icon-layout" id="captionBtn" title="Closed Caption">
+                <span class="icon-caption"></span>
+            </div>
+            <span class="duration-display" id="videoDuration">00:00:00</span>
+            <div class="seekContainer">
+                <div class="seekbar seekbar-complete" id="seekbar">
+                    <div class="seekbar seekbar-buffer" id="seekbar-buffer"></div>
+                    <div class="seekbar seekbar-play" id="seekbar-play"></div>
+                </div>
+            </div>
+
+            <div class="thumbnail-container" id="thumbnail-container"> <!-- Thumbnails will be rendered here -->
+                <div class="thumbnail-elem" id="thumbnail-elem"></div>
+                <div class="thumbnail-time-label" id="thumbnail-time-label"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function init() {
+        // let url = "http://dash.edgesuite.net/akamai/bbb_30fps/bbb_with_multiple_tiled_thumbnails.mpd";
+        var url = "./stream.mpd";
+        let player = dashjs.MediaPlayer().create();
+        player.initialize(document.querySelector("#videoPlayer"), url, true);
+
+        let controlBar = new ControlBar(player);
+        controlBar.initialize();
+
+        // player.updateSettings({
+        //     'debug': {
+        //         'logLevel': dashjs.Debug.LOG_LEVEL_DEBUG
+        //     }
+        // });
+
+        // player.updateSettings({
+        //     'streaming': {
+        //         'abr': {
+        //             'useDefaultABRRules': false
+        //         }
+        //     }
+        // });
+        //
+        // player.addABRCustomRule('qualitySwitchRules', 'LowestBitrateRule', LowestBitrateRule);
+
+        setInterval(function () {
+            // console.log()
+        }, 3000);
+
+        setTimeout(function () {
+
+        }, 2000)
+    }
+</script>
+
+</body>
+</html>

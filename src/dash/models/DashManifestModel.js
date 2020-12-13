@@ -613,12 +613,14 @@ function DashManifestModel() {
         let len,
             i;
 
+        //@chanper: len = 1
         for (i = 0, len = mpd && mpd.manifest && mpd.manifest.Period_asArray ? mpd.manifest.Period_asArray.length : 0; i < len; i++) {
             realPeriod = mpd.manifest.Period_asArray[i];
 
             // If the attribute @start is present in the Period, then the
             // Period is a regular Period and the PeriodStart is equal
             // to the value of this attribute.
+            // @chanper: voPeriod.start should be 0.
             if (realPeriod.hasOwnProperty(DashConstants.START)) {
                 voPeriod = new Period();
                 voPeriod.start = realPeriod.start;
@@ -644,6 +646,7 @@ function DashManifestModel() {
             // The Period extends until the PeriodStart of the next Period.
             // The difference between the PeriodStart time of a Period and
             // the PeriodStart time of the following Period.
+            // @chanper: no previousPeriod
             if (voPreviousPeriod !== null && isNaN(voPreviousPeriod.duration)) {
                 if (voPeriod !== null) {
                     voPreviousPeriod.duration = parseFloat((voPeriod.start - voPreviousPeriod.start).toFixed(5));
@@ -680,7 +683,6 @@ function DashManifestModel() {
         if (voPreviousPeriod !== null && isNaN(voPreviousPeriod.duration)) {
             voPreviousPeriod.duration = parseFloat((getEndTimeForLastPeriod(voPreviousPeriod) - voPreviousPeriod.start).toFixed(5));
         }
-
         return voPeriods;
     }
 
@@ -903,6 +905,7 @@ function DashManifestModel() {
 
         // do not bother synchronizing the clock unless MPD is live,
         // or it is static and has availabilityStartTime attribute
+        // @chanper: pass, return []
         if ((isDynamic || hasAST)) {
             if (utcTimingsArray) {
                 // the order is important here - 23009-1 states that the order
@@ -948,11 +951,13 @@ function DashManifestModel() {
         const entries = node.BaseURL_asArray || [node.baseUri];
         let earlyReturn = false;
 
+        //@chanper: For Period,entries = ["http://localhost:3000/MyDemo/"]; For AdaptationSet and Representation, entries = [undefined]
         entries.some(entry => {
             if (entry) {
                 const baseUrl = new BaseURL();
                 let text = entry.__text || entry;
 
+                //@chanper: local mpd pass
                 if (urlUtils.isRelative(text)) {
                     // it doesn't really make sense to have relative and
                     // absolute URLs at the same level, or multiple

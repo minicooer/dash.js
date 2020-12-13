@@ -53,7 +53,7 @@ function LowestBitrateRuleClass() {
 
         // A smarter (real) rule could need analyze playback metrics to take
         // bitrate switching decision. Printing metrics here as a reference
-        console.log(metrics);
+        // console.log(metrics);
 
         // Get current bitrate
         let streamController = StreamController(context).getInstance();

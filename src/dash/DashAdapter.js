@@ -571,6 +571,7 @@ function DashAdapter() {
      * @instance
      */
     function getMpd(externalManifest) {
+        //@chanper: voPeriods = []; manifest = externalManifest
         const manifest = getManifest(externalManifest);
         return dashManifestModel.getMpd(manifest);
     }

@@ -262,6 +262,7 @@ function StreamProcessor(config) {
     function onBufferLevelUpdated(e) {
         dashMetrics.addBufferLevel(type, new Date(), e.bufferLevel * 1000);
         const activeStreamId = playbackController.getStreamController().getActiveStreamInfo().id;
+        //@chanper: Enter
         if (!manifestModel.getValue().doNotUpdateDVRWindowOnBufferUpdated && streamInfo.id === activeStreamId) {
             addDVRMetric();
         }
@@ -344,6 +345,7 @@ function StreamProcessor(config) {
             let bitrate = null;
 
             if ((realAdaptation === null || (realAdaptation.id != newRealAdaptation.id)) && type !== Constants.FRAGMENTED_TEXT) {
+                //@chanper: averageThroughtput = NaN, bitrate = 1000, quality = 2(maximum under 1000kbps) firstly
                 averageThroughput = abrController.getThroughputHistory().getAverageThroughput(type);
                 bitrate = averageThroughput || abrController.getInitialBitrateFor(type);
                 quality = abrController.getQualityForBitrate(mediaInfo, bitrate);
@@ -429,6 +431,7 @@ function StreamProcessor(config) {
         if (adapter.getIsTextTrack(mimeType) && !textController.isTextEnabled()) return;
 
         if (bufferController && e.representationId) {
+            //@chanper: false first for every representation
             if (!bufferController.appendInitSegment(e.representationId)) {
                 // Init segment not in cache, send new request
                 const request = indexHandler ? indexHandler.getInitRequest(getMediaInfo(), representationController.getCurrentRepresentation()) : null;

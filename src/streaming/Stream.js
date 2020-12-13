@@ -339,6 +339,7 @@ function Stream(config) {
             }
             return thumbnailController.getBitrateList();
         }
+
         const mediaInfo = getMediaInfo(type);
         return abrController.getBitrateList(mediaInfo);
     }
@@ -467,7 +468,6 @@ function Stream(config) {
 
     function initializeMediaForType(type, mediaSource) {
         const allMediaForType = adapter.getAllMediaInfoForType(streamInfo, type);
-
         let mediaInfo = null;
         let initialMediaInfo;
 
@@ -615,7 +615,9 @@ function Stream(config) {
         });
     }
 
-    function checkIfInitializationCompleted() {
+    function
+    checkIfInitializationCompleted() {
+        //@chanper: ln = 1
         const ln = streamProcessors.length;
         const hasError = !!updateError.audio || !!updateError.video;
         let error = hasError ? new DashJSError(Errors.DATA_UPDATE_FAILED_ERROR_CODE, Errors.DATA_UPDATE_FAILED_ERROR_MESSAGE) : null;
@@ -713,11 +715,13 @@ function Stream(config) {
     }
 
     function onDataUpdateCompleted(e) {
+        // console.log("Stream.js: onDataUpdateCompleted");
         updateError[e.mediaType] = e.error;
         checkIfInitializationCompleted();
     }
 
     function onInbandEvents(e) {
+        // console.log("Stream.js: onInbandEvents");
         addInbandEvents(e.events);
     }
 

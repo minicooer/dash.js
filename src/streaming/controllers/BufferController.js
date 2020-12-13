@@ -208,7 +208,7 @@ function BufferController(config) {
     function appendInitSegment(representationId) {
         // Get init segment from cache
         const chunk = initCache.extract(streamInfo.id, representationId);
-
+        //@chanper: chunk = null first for every representation
         if (!chunk) {
             // Init segment not in cache, shall be requested
             return false;
@@ -251,11 +251,13 @@ function BufferController(config) {
         if (ranges && ranges.length > 0) {
             for (let i = 0, len = ranges.length; i < len; i++) {
                 logger.debug('Buffered range: ' + ranges.start(i) + ' - ' + ranges.end(i) + ', currentTime = ', playbackController.getTime());
+                // console.log('Buffered range: ' + ranges.start(i) + ' - ' + ranges.end(i) + ', currentTime = ', playbackController.getTime());
             }
         }
     }
 
     function onAppended(e) {
+        // @chanper: pass
         if (e.error) {
             if (e.error.code === QUOTA_EXCEEDED_ERROR_CODE) {
                 isQuotaExceeded = true;
@@ -456,6 +458,7 @@ function BufferController(config) {
         return clearRanges;
     }
 
+    //@chanper: return current playback time
     function getWorkingTime() {
         return isNaN(seekTarget) ? playbackController.getTime() : seekTarget;
     }
@@ -475,6 +478,7 @@ function BufferController(config) {
         checkIfSufficientBuffer();
     }
 
+    //@chanper: return buffer range around given time
     function getRangeAt(time, tolerance) {
         const ranges = buffer.getAllBufferRanges();
         let start = 0;
@@ -524,6 +528,7 @@ function BufferController(config) {
         return null;
     }
 
+    //@chanper: return buffer length from given time
     function getBufferLength(time, tolerance) {
         let range,
             length;
@@ -540,7 +545,6 @@ function BufferController(config) {
         } else {
             length = range.end - time;
         }
-
         return length;
     }
 

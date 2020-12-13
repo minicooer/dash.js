@@ -203,6 +203,7 @@ function PlaybackController() {
         seek(DVRWindow.end - mediaPlayerModel.getLiveDelay(), true, false);
     }
 
+    //@chanper: return current playback time
     function getTime() {
         return streamInfo && videoModel ? videoModel.getTime() : null;
     }

@@ -1351,7 +1351,6 @@ function MediaPlayer() {
         }
 
         videoModel.setElement(element);
-
         if (element) {
             detectProtection();
             detectMetricsReporting();
@@ -1544,6 +1543,7 @@ function MediaPlayer() {
 
     /**
      * This method returns the current track switch mode.
+     * alwaysReplace / neverReplace
      *
      * @param {MediaType} type
      * @returns {string} mode
@@ -2192,7 +2192,6 @@ function MediaPlayer() {
     }
 
     function initializePlayback() {
-
         if (offlineController) {
             offlineController.resetRecords();
         }
@@ -2208,7 +2207,6 @@ function MediaPlayer() {
                 streamController.loadWithManifest(source);
             }
         }
-
         if (!playbackInitialized && isReady()) {
             playbackInitialized = true;
             logger.info('Playback Initialized');

@@ -535,6 +535,7 @@ function StreamController() {
         logger.info(`Seamless period switch is set to ${seamlessPeriodSwitch}`);
 
         activeStream = stream;
+        //@chanper: preloadingStreams = [];
         preloadingStreams = preloadingStreams.filter((s) => {
             return s.getId() !== activeStream.getId();
         });
@@ -557,10 +558,10 @@ function StreamController() {
     function openMediaSource(seekTime, sourceInitialized, streamActivated, keepBuffers) {
         let sourceUrl;
 
+        //@chanper: seekTime = NaN, sourceInitialized = true, streamActivated = false, keepBuffers = false
         function onMediaSourceOpen() {
             // Manage situations in which a call to reset happens while MediaSource is being opened
             if (!mediaSource || mediaSource.readyState !== 'open') return;
-
             logger.debug('MediaSource is open!');
             window.URL.revokeObjectURL(sourceUrl);
             mediaSource.removeEventListener('sourceopen', onMediaSourceOpen);
@@ -578,11 +579,13 @@ function StreamController() {
             }
         }
 
+        //@chanper: enter
         if (!mediaSource) {
             mediaSource = mediaSourceController.createMediaSource();
             mediaSource.addEventListener('sourceopen', onMediaSourceOpen, false);
             mediaSource.addEventListener('webkitsourceopen', onMediaSourceOpen, false);
             sourceUrl = mediaSourceController.attachMediaSource(mediaSource, videoModel);
+            // @chanper: mediaSource.readyState is still closed;
             logger.debug('MediaSource attached to element.  Waiting on open...');
         } else {
             if (keepBuffers) {
@@ -666,6 +669,7 @@ function StreamController() {
                 clientTimeOffset: timelineConverter.getClientTimeOffset()
             });
 
+            //@chanper: streams is null firstly
             // Filter streams that are outdated and not included in the MPD anymore
             if (streams.length > 0) {
                 streams = streams.filter((stream) => {
@@ -684,6 +688,7 @@ function StreamController() {
                 });
             }
 
+            //@chanper: streamInfo.length = 1
             for (let i = 0, ln = streamsInfo.length; i < ln; i++) {
                 // If the Stream object does not exist we probably loaded the manifest the first time or it was
                 // introduced in the updated manifest, so we need to create a new Stream and perform all the initialization operations
@@ -719,8 +724,9 @@ function StreamController() {
 
                 dashMetrics.addManifestUpdateStreamInfo(streamInfo);
             }
-
+            //@chanper: null first
             if (!activeStream) {
+                //@chanper: pass
                 if (adapter.getIsDynamic() && streams.length) {
                     // Compute and set live delay
                     const manifestInfo = streamsInfo[0].manifestInfo;
@@ -732,6 +738,7 @@ function StreamController() {
                 let initialStream = null;
                 const startTimeFromUri = playbackController.getStartTimeFromUriParameters(streamsInfo[0].start, adapter.getIsDynamic());
 
+                // @chanper: startTImeFromUri = NaN, so initialStream = null
                 initialStream = getStreamForTime(startTimeFromUri);
 
                 // For multiperiod streams we should avoid a switch of streams after the seek to the live edge. So we do a calculation of the expected seek time to find the right stream object.
@@ -739,6 +746,8 @@ function StreamController() {
                     logger.debug('Dynamic stream: Trying to find the correct starting period');
                     initialStream = getInitialStream();
                 }
+
+                //@chanper: so startStream = streams[0]
                 const startStream = initialStream !== null ? initialStream : streams[0];
                 switchStream(startStream, null, NaN);
                 startPlaybackEndedTimerInterval();
@@ -826,12 +835,14 @@ function StreamController() {
     function onTimeSyncCompleted( /*e*/) {
         const manifest = manifestModel.getValue();
         //TODO check if we can move this to initialize??
+        //@chanper: Yes, but no need to see
         if (protectionController) {
             eventBus.trigger(Events.PROTECTION_CREATED, {
                 controller: protectionController,
                 manifest: manifest
             });
             protectionController.setMediaElement(videoModel.getElement());
+            //@chanper: pass
             if (protectionData) {
                 protectionController.setProtectionData(protectionData);
             }
@@ -847,6 +858,7 @@ function StreamController() {
             const manifest = e.manifest;
             adapter.updatePeriods(manifest);
 
+            //@chanper: manifestUTCTimingSources = [], allUTCTimingSources = [], isHTTPS = false;
             let manifestUTCTimingSources = adapter.getUTCTimingSources();
             let allUTCTimingSources = (!adapter.getIsDynamic()) ? manifestUTCTimingSources : manifestUTCTimingSources.concat(mediaPlayerModel.getUTCTimingSources());
             const isHTTPS = urlUtils.isHTTPS(e.manifest.url);
@@ -857,6 +869,7 @@ function StreamController() {
                     item.value = item.value.replace(isHTTPS ? new RegExp(/^(http:)?\/\//i) : new RegExp(/^(https:)?\/\//i), isHTTPS ? 'https://' : 'http://');
                     logger.debug('Matching default timing source protocol to manifest protocol: ', item.value);
                 }
+
             });
 
             baseURLController.initialize(manifest);

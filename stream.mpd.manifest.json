@@ -1,0 +1,3201 @@
+{
+    "Period": {
+        "AdaptationSet": {
+            "SegmentTemplate": {
+                "__children": [],
+                "timescale": 1000,
+                "duration": 2000,
+                "initialization": "$RepresentationID$/init.mp4",
+                "media": "$RepresentationID$/seg-$Number$.m4s",
+                "startNumber": 1
+            },
+            "SegmentTemplate_asArray": [
+                {
+                    "__children": [],
+                    "timescale": 1000,
+                    "duration": 2000,
+                    "initialization": "$RepresentationID$/init.mp4",
+                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                    "startNumber": 1
+                }
+            ],
+            "Representation": [
+                {
+                    "__children": [],
+                    "id": "video/avc1/5",
+                    "codecs": "avc1.64000C",
+                    "width": 256,
+                    "height": 144,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 325708,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/4",
+                    "codecs": "avc1.64001E",
+                    "width": 640,
+                    "height": 360,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 2126986,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/3",
+                    "codecs": "avc1.64001F",
+                    "width": 896,
+                    "height": 504,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 2450659,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/2",
+                    "codecs": "avc1.64001F",
+                    "width": 1280,
+                    "height": 720,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 3255591,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/1",
+                    "codecs": "avc1.640028",
+                    "width": 1920,
+                    "height": 1080,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 9781301,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                }
+            ],
+            "Representation_asArray": [
+                {
+                    "__children": [],
+                    "id": "video/avc1/5",
+                    "codecs": "avc1.64000C",
+                    "width": 256,
+                    "height": 144,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 325708,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/4",
+                    "codecs": "avc1.64001E",
+                    "width": 640,
+                    "height": 360,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 2126986,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/3",
+                    "codecs": "avc1.64001F",
+                    "width": 896,
+                    "height": 504,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 2450659,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/2",
+                    "codecs": "avc1.64001F",
+                    "width": 1280,
+                    "height": 720,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 3255591,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                },
+                {
+                    "__children": [],
+                    "id": "video/avc1/1",
+                    "codecs": "avc1.640028",
+                    "width": 1920,
+                    "height": 1080,
+                    "scanType": "progressive",
+                    "frameRate": 24,
+                    "bandwidth": 9781301,
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "mimeType": "video/mp4",
+                    "startWithSAP": 1
+                }
+            ],
+            "__children": [
+                {
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    }
+                },
+                {
+                    "Representation": {
+                        "__children": [],
+                        "id": "video/avc1/1",
+                        "codecs": "avc1.640028",
+                        "width": 1920,
+                        "height": 1080,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 9781301,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                },
+                {
+                    "Representation": {
+                        "__children": [],
+                        "id": "video/avc1/2",
+                        "codecs": "avc1.64001F",
+                        "width": 1280,
+                        "height": 720,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 3255591,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                },
+                {
+                    "Representation": {
+                        "__children": [],
+                        "id": "video/avc1/3",
+                        "codecs": "avc1.64001F",
+                        "width": 896,
+                        "height": 504,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2450659,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                },
+                {
+                    "Representation": {
+                        "__children": [],
+                        "id": "video/avc1/4",
+                        "codecs": "avc1.64001E",
+                        "width": 640,
+                        "height": 360,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2126986,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                },
+                {
+                    "Representation": {
+                        "__children": [],
+                        "id": "video/avc1/5",
+                        "codecs": "avc1.64000C",
+                        "width": 256,
+                        "height": 144,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 325708,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                }
+            ],
+            "mimeType": "video/mp4",
+            "segmentAlignment": "true",
+            "startWithSAP": 1,
+            "maxWidth": 1920,
+            "maxHeight": 1080
+        },
+        "AdaptationSet_asArray": [
+            {
+                "SegmentTemplate": {
+                    "__children": [],
+                    "timescale": 1000,
+                    "duration": 2000,
+                    "initialization": "$RepresentationID$/init.mp4",
+                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                    "startNumber": 1
+                },
+                "SegmentTemplate_asArray": [
+                    {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    }
+                ],
+                "Representation": [
+                    {
+                        "__children": [],
+                        "id": "video/avc1/5",
+                        "codecs": "avc1.64000C",
+                        "width": 256,
+                        "height": 144,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 325708,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/4",
+                        "codecs": "avc1.64001E",
+                        "width": 640,
+                        "height": 360,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2126986,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/3",
+                        "codecs": "avc1.64001F",
+                        "width": 896,
+                        "height": 504,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2450659,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/2",
+                        "codecs": "avc1.64001F",
+                        "width": 1280,
+                        "height": 720,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 3255591,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/1",
+                        "codecs": "avc1.640028",
+                        "width": 1920,
+                        "height": 1080,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 9781301,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                ],
+                "Representation_asArray": [
+                    {
+                        "__children": [],
+                        "id": "video/avc1/5",
+                        "codecs": "avc1.64000C",
+                        "width": 256,
+                        "height": 144,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 325708,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/4",
+                        "codecs": "avc1.64001E",
+                        "width": 640,
+                        "height": 360,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2126986,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/3",
+                        "codecs": "avc1.64001F",
+                        "width": 896,
+                        "height": 504,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2450659,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/2",
+                        "codecs": "avc1.64001F",
+                        "width": 1280,
+                        "height": 720,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 3255591,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/1",
+                        "codecs": "avc1.640028",
+                        "width": 1920,
+                        "height": 1080,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 9781301,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                ],
+                "__children": [
+                    {
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    }
+                ],
+                "mimeType": "video/mp4",
+                "segmentAlignment": "true",
+                "startWithSAP": 1,
+                "maxWidth": 1920,
+                "maxHeight": 1080
+            }
+        ],
+        "__children": [
+            {
+                "AdaptationSet": {
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "SegmentTemplate_asArray": [
+                        {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        }
+                    ],
+                    "Representation": [
+                        {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    ],
+                    "Representation_asArray": [
+                        {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    ],
+                    "__children": [
+                        {
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        }
+                    ],
+                    "mimeType": "video/mp4",
+                    "segmentAlignment": "true",
+                    "startWithSAP": 1,
+                    "maxWidth": 1920,
+                    "maxHeight": 1080
+                }
+            }
+        ]
+    },
+    "Period_asArray": [
+        {
+            "AdaptationSet": {
+                "SegmentTemplate": {
+                    "__children": [],
+                    "timescale": 1000,
+                    "duration": 2000,
+                    "initialization": "$RepresentationID$/init.mp4",
+                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                    "startNumber": 1
+                },
+                "SegmentTemplate_asArray": [
+                    {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    }
+                ],
+                "Representation": [
+                    {
+                        "__children": [],
+                        "id": "video/avc1/5",
+                        "codecs": "avc1.64000C",
+                        "width": 256,
+                        "height": 144,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 325708,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/4",
+                        "codecs": "avc1.64001E",
+                        "width": 640,
+                        "height": 360,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2126986,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/3",
+                        "codecs": "avc1.64001F",
+                        "width": 896,
+                        "height": 504,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2450659,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/2",
+                        "codecs": "avc1.64001F",
+                        "width": 1280,
+                        "height": 720,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 3255591,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/1",
+                        "codecs": "avc1.640028",
+                        "width": 1920,
+                        "height": 1080,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 9781301,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                ],
+                "Representation_asArray": [
+                    {
+                        "__children": [],
+                        "id": "video/avc1/5",
+                        "codecs": "avc1.64000C",
+                        "width": 256,
+                        "height": 144,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 325708,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/4",
+                        "codecs": "avc1.64001E",
+                        "width": 640,
+                        "height": 360,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2126986,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/3",
+                        "codecs": "avc1.64001F",
+                        "width": 896,
+                        "height": 504,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 2450659,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/2",
+                        "codecs": "avc1.64001F",
+                        "width": 1280,
+                        "height": 720,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 3255591,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    },
+                    {
+                        "__children": [],
+                        "id": "video/avc1/1",
+                        "codecs": "avc1.640028",
+                        "width": 1920,
+                        "height": 1080,
+                        "scanType": "progressive",
+                        "frameRate": 24,
+                        "bandwidth": 9781301,
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "mimeType": "video/mp4",
+                        "startWithSAP": 1
+                    }
+                ],
+                "__children": [
+                    {
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    },
+                    {
+                        "Representation": {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    }
+                ],
+                "mimeType": "video/mp4",
+                "segmentAlignment": "true",
+                "startWithSAP": 1,
+                "maxWidth": 1920,
+                "maxHeight": 1080
+            },
+            "AdaptationSet_asArray": [
+                {
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "SegmentTemplate_asArray": [
+                        {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        }
+                    ],
+                    "Representation": [
+                        {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    ],
+                    "Representation_asArray": [
+                        {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    ],
+                    "__children": [
+                        {
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        }
+                    ],
+                    "mimeType": "video/mp4",
+                    "segmentAlignment": "true",
+                    "startWithSAP": 1,
+                    "maxWidth": 1920,
+                    "maxHeight": 1080
+                }
+            ],
+            "__children": [
+                {
+                    "AdaptationSet": {
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "SegmentTemplate_asArray": [
+                            {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            }
+                        ],
+                        "Representation": [
+                            {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        ],
+                        "Representation_asArray": [
+                            {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        ],
+                        "__children": [
+                            {
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/1",
+                                    "codecs": "avc1.640028",
+                                    "width": 1920,
+                                    "height": 1080,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 9781301,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/2",
+                                    "codecs": "avc1.64001F",
+                                    "width": 1280,
+                                    "height": 720,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 3255591,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/3",
+                                    "codecs": "avc1.64001F",
+                                    "width": 896,
+                                    "height": 504,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2450659,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/4",
+                                    "codecs": "avc1.64001E",
+                                    "width": 640,
+                                    "height": 360,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2126986,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/5",
+                                    "codecs": "avc1.64000C",
+                                    "width": 256,
+                                    "height": 144,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 325708,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            }
+                        ],
+                        "mimeType": "video/mp4",
+                        "segmentAlignment": "true",
+                        "startWithSAP": 1,
+                        "maxWidth": 1920,
+                        "maxHeight": 1080
+                    }
+                }
+            ]
+        }
+    ],
+    "__children": [
+        {
+            "Period": {
+                "AdaptationSet": {
+                    "SegmentTemplate": {
+                        "__children": [],
+                        "timescale": 1000,
+                        "duration": 2000,
+                        "initialization": "$RepresentationID$/init.mp4",
+                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                        "startNumber": 1
+                    },
+                    "SegmentTemplate_asArray": [
+                        {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        }
+                    ],
+                    "Representation": [
+                        {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    ],
+                    "Representation_asArray": [
+                        {
+                            "__children": [],
+                            "id": "video/avc1/5",
+                            "codecs": "avc1.64000C",
+                            "width": 256,
+                            "height": 144,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 325708,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/4",
+                            "codecs": "avc1.64001E",
+                            "width": 640,
+                            "height": 360,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2126986,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/3",
+                            "codecs": "avc1.64001F",
+                            "width": 896,
+                            "height": 504,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 2450659,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/2",
+                            "codecs": "avc1.64001F",
+                            "width": 1280,
+                            "height": 720,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 3255591,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        },
+                        {
+                            "__children": [],
+                            "id": "video/avc1/1",
+                            "codecs": "avc1.640028",
+                            "width": 1920,
+                            "height": 1080,
+                            "scanType": "progressive",
+                            "frameRate": 24,
+                            "bandwidth": 9781301,
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "mimeType": "video/mp4",
+                            "startWithSAP": 1
+                        }
+                    ],
+                    "__children": [
+                        {
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        },
+                        {
+                            "Representation": {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        }
+                    ],
+                    "mimeType": "video/mp4",
+                    "segmentAlignment": "true",
+                    "startWithSAP": 1,
+                    "maxWidth": 1920,
+                    "maxHeight": 1080
+                },
+                "AdaptationSet_asArray": [
+                    {
+                        "SegmentTemplate": {
+                            "__children": [],
+                            "timescale": 1000,
+                            "duration": 2000,
+                            "initialization": "$RepresentationID$/init.mp4",
+                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                            "startNumber": 1
+                        },
+                        "SegmentTemplate_asArray": [
+                            {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            }
+                        ],
+                        "Representation": [
+                            {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        ],
+                        "Representation_asArray": [
+                            {
+                                "__children": [],
+                                "id": "video/avc1/5",
+                                "codecs": "avc1.64000C",
+                                "width": 256,
+                                "height": 144,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 325708,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/4",
+                                "codecs": "avc1.64001E",
+                                "width": 640,
+                                "height": 360,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2126986,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/3",
+                                "codecs": "avc1.64001F",
+                                "width": 896,
+                                "height": 504,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 2450659,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/2",
+                                "codecs": "avc1.64001F",
+                                "width": 1280,
+                                "height": 720,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 3255591,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            },
+                            {
+                                "__children": [],
+                                "id": "video/avc1/1",
+                                "codecs": "avc1.640028",
+                                "width": 1920,
+                                "height": 1080,
+                                "scanType": "progressive",
+                                "frameRate": 24,
+                                "bandwidth": 9781301,
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                },
+                                "mimeType": "video/mp4",
+                                "startWithSAP": 1
+                            }
+                        ],
+                        "__children": [
+                            {
+                                "SegmentTemplate": {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/1",
+                                    "codecs": "avc1.640028",
+                                    "width": 1920,
+                                    "height": 1080,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 9781301,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/2",
+                                    "codecs": "avc1.64001F",
+                                    "width": 1280,
+                                    "height": 720,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 3255591,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/3",
+                                    "codecs": "avc1.64001F",
+                                    "width": 896,
+                                    "height": 504,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2450659,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/4",
+                                    "codecs": "avc1.64001E",
+                                    "width": 640,
+                                    "height": 360,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2126986,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            },
+                            {
+                                "Representation": {
+                                    "__children": [],
+                                    "id": "video/avc1/5",
+                                    "codecs": "avc1.64000C",
+                                    "width": 256,
+                                    "height": 144,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 325708,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            }
+                        ],
+                        "mimeType": "video/mp4",
+                        "segmentAlignment": "true",
+                        "startWithSAP": 1,
+                        "maxWidth": 1920,
+                        "maxHeight": 1080
+                    }
+                ],
+                "__children": [
+                    {
+                        "AdaptationSet": {
+                            "SegmentTemplate": {
+                                "__children": [],
+                                "timescale": 1000,
+                                "duration": 2000,
+                                "initialization": "$RepresentationID$/init.mp4",
+                                "media": "$RepresentationID$/seg-$Number$.m4s",
+                                "startNumber": 1
+                            },
+                            "SegmentTemplate_asArray": [
+                                {
+                                    "__children": [],
+                                    "timescale": 1000,
+                                    "duration": 2000,
+                                    "initialization": "$RepresentationID$/init.mp4",
+                                    "media": "$RepresentationID$/seg-$Number$.m4s",
+                                    "startNumber": 1
+                                }
+                            ],
+                            "Representation": [
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/5",
+                                    "codecs": "avc1.64000C",
+                                    "width": 256,
+                                    "height": 144,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 325708,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/4",
+                                    "codecs": "avc1.64001E",
+                                    "width": 640,
+                                    "height": 360,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2126986,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/3",
+                                    "codecs": "avc1.64001F",
+                                    "width": 896,
+                                    "height": 504,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2450659,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/2",
+                                    "codecs": "avc1.64001F",
+                                    "width": 1280,
+                                    "height": 720,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 3255591,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/1",
+                                    "codecs": "avc1.640028",
+                                    "width": 1920,
+                                    "height": 1080,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 9781301,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            ],
+                            "Representation_asArray": [
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/5",
+                                    "codecs": "avc1.64000C",
+                                    "width": 256,
+                                    "height": 144,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 325708,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/4",
+                                    "codecs": "avc1.64001E",
+                                    "width": 640,
+                                    "height": 360,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2126986,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/3",
+                                    "codecs": "avc1.64001F",
+                                    "width": 896,
+                                    "height": 504,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 2450659,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/2",
+                                    "codecs": "avc1.64001F",
+                                    "width": 1280,
+                                    "height": 720,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 3255591,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                },
+                                {
+                                    "__children": [],
+                                    "id": "video/avc1/1",
+                                    "codecs": "avc1.640028",
+                                    "width": 1920,
+                                    "height": 1080,
+                                    "scanType": "progressive",
+                                    "frameRate": 24,
+                                    "bandwidth": 9781301,
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    },
+                                    "mimeType": "video/mp4",
+                                    "startWithSAP": 1
+                                }
+                            ],
+                            "__children": [
+                                {
+                                    "SegmentTemplate": {
+                                        "__children": [],
+                                        "timescale": 1000,
+                                        "duration": 2000,
+                                        "initialization": "$RepresentationID$/init.mp4",
+                                        "media": "$RepresentationID$/seg-$Number$.m4s",
+                                        "startNumber": 1
+                                    }
+                                },
+                                {
+                                    "Representation": {
+                                        "__children": [],
+                                        "id": "video/avc1/1",
+                                        "codecs": "avc1.640028",
+                                        "width": 1920,
+                                        "height": 1080,
+                                        "scanType": "progressive",
+                                        "frameRate": 24,
+                                        "bandwidth": 9781301,
+                                        "SegmentTemplate": {
+                                            "__children": [],
+                                            "timescale": 1000,
+                                            "duration": 2000,
+                                            "initialization": "$RepresentationID$/init.mp4",
+                                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                                            "startNumber": 1
+                                        },
+                                        "mimeType": "video/mp4",
+                                        "startWithSAP": 1
+                                    }
+                                },
+                                {
+                                    "Representation": {
+                                        "__children": [],
+                                        "id": "video/avc1/2",
+                                        "codecs": "avc1.64001F",
+                                        "width": 1280,
+                                        "height": 720,
+                                        "scanType": "progressive",
+                                        "frameRate": 24,
+                                        "bandwidth": 3255591,
+                                        "SegmentTemplate": {
+                                            "__children": [],
+                                            "timescale": 1000,
+                                            "duration": 2000,
+                                            "initialization": "$RepresentationID$/init.mp4",
+                                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                                            "startNumber": 1
+                                        },
+                                        "mimeType": "video/mp4",
+                                        "startWithSAP": 1
+                                    }
+                                },
+                                {
+                                    "Representation": {
+                                        "__children": [],
+                                        "id": "video/avc1/3",
+                                        "codecs": "avc1.64001F",
+                                        "width": 896,
+                                        "height": 504,
+                                        "scanType": "progressive",
+                                        "frameRate": 24,
+                                        "bandwidth": 2450659,
+                                        "SegmentTemplate": {
+                                            "__children": [],
+                                            "timescale": 1000,
+                                            "duration": 2000,
+                                            "initialization": "$RepresentationID$/init.mp4",
+                                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                                            "startNumber": 1
+                                        },
+                                        "mimeType": "video/mp4",
+                                        "startWithSAP": 1
+                                    }
+                                },
+                                {
+                                    "Representation": {
+                                        "__children": [],
+                                        "id": "video/avc1/4",
+                                        "codecs": "avc1.64001E",
+                                        "width": 640,
+                                        "height": 360,
+                                        "scanType": "progressive",
+                                        "frameRate": 24,
+                                        "bandwidth": 2126986,
+                                        "SegmentTemplate": {
+                                            "__children": [],
+                                            "timescale": 1000,
+                                            "duration": 2000,
+                                            "initialization": "$RepresentationID$/init.mp4",
+                                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                                            "startNumber": 1
+                                        },
+                                        "mimeType": "video/mp4",
+                                        "startWithSAP": 1
+                                    }
+                                },
+                                {
+                                    "Representation": {
+                                        "__children": [],
+                                        "id": "video/avc1/5",
+                                        "codecs": "avc1.64000C",
+                                        "width": 256,
+                                        "height": 144,
+                                        "scanType": "progressive",
+                                        "frameRate": 24,
+                                        "bandwidth": 325708,
+                                        "SegmentTemplate": {
+                                            "__children": [],
+                                            "timescale": 1000,
+                                            "duration": 2000,
+                                            "initialization": "$RepresentationID$/init.mp4",
+                                            "media": "$RepresentationID$/seg-$Number$.m4s",
+                                            "startNumber": 1
+                                        },
+                                        "mimeType": "video/mp4",
+                                        "startWithSAP": 1
+                                    }
+                                }
+                            ],
+                            "mimeType": "video/mp4",
+                            "segmentAlignment": "true",
+                            "startWithSAP": 1,
+                            "maxWidth": 1920,
+                            "maxHeight": 1080
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "xmlns": "urn:mpeg:dash:schema:mpd:2011",
+    "profiles": "urn:mpeg:dash:profile:isoff-live:2011",
+    "minBufferTime": 2,
+    "mediaPresentationDuration": 596.458,
+    "type": "static",
+    "protocol": "DASH",
+    "url": "http://localhost:3000/MyDemo/stream.mpd",
+    "originalUrl": "http://localhost:3000/MyDemo/stream.mpd",
+    "baseUri": "http://localhost:3000/MyDemo/",
+    "loadedTime": "2020-12-09T01:34:46.410Z"
+}

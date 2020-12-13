@@ -282,6 +282,7 @@ function FragmentModel(config) {
     function onLoadingCompleted(e) {
         if (e.sender !== fragmentLoader) return;
 
+        //@chanper: splice the completed request
         loadingRequests.splice(loadingRequests.indexOf(e.request), 1);
 
         if (e.response && !e.error) {

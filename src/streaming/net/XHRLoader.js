@@ -56,6 +56,7 @@ function XHRLoader(cfg) {
             xhr.responseType = request.responseType;
         }
 
+        //@chanper: no range
         if (request.range) {
             xhr.setRequestHeader('Range', 'bytes=' + request.range);
         }

@@ -59,7 +59,9 @@ function SchemeLoaderFactory() {
     function getLoader(url) {
 
         // iterates through schemeLoaderMap to find a loader for the scheme
+        //@chanper: no scheme... Pass
         for (var scheme in schemeLoaderMap) {
+            console.log(scheme);
             if (schemeLoaderMap.hasOwnProperty(scheme) && url.startsWith(scheme)) {
                 return schemeLoaderMap[scheme];
             }

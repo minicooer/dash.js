@@ -293,6 +293,7 @@ function VideoModel() {
         return element ? element.seeking : null;
     }
 
+    //@chanper: return current playback time
     function getTime() {
         return element ? element.currentTime : null;
     }

@@ -44,11 +44,16 @@ function BufferLevelRule(config) {
     function setup() {
     }
 
+
+    //@chanper: return if current bufferLevel < Target BufferLevel
     function execute(type, representationInfo, hasVideoTrack) {
+        //@chanper: type = video, hasVideoTrack = true
         if (!type || !representationInfo) {
             return true;
         }
         const bufferLevel = dashMetrics.getCurrentBufferLevel(type);
+        // @chanper: for Audio, bufferLevel > bufferTarget, since it has playback a little from last getCurrentBufferLevel()
+        // @chanper: for Video, target = 30/60s for topQuality, tartget = 12 for normal
         return bufferLevel < getBufferTarget(type, representationInfo, hasVideoTrack);
     }
 
@@ -74,6 +79,7 @@ function BufferLevelRule(config) {
             }
         }  else if (type === Constants.AUDIO && hasVideoTrack) {
             const videoBufferLevel = dashMetrics.getCurrentBufferLevel(Constants.VIDEO);
+            //@chanper: representationInfo.fragmentDuration = 2s for stream.mpd
             if (isNaN(representationInfo.fragmentDuration)) {
                 bufferTarget = videoBufferLevel;
             } else {

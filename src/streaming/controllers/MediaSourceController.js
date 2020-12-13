@@ -57,11 +57,8 @@ function MediaSourceController() {
     }
 
     function attachMediaSource(source, videoModel) {
-
         let objectURL = window.URL.createObjectURL(source);
-
         videoModel.setSource(objectURL);
-
         return objectURL;
     }
 

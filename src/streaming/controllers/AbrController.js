@@ -205,7 +205,6 @@ function AbrController() {
     function getTopQualityIndexFor(type, id) {
         let idx;
         topQualities[id] = topQualities[id] || {};
-
         if (!topQualities[id].hasOwnProperty(type)) {
             topQualities[id][type] = 0;
         }
@@ -224,6 +223,7 @@ function AbrController() {
     function getTopBitrateInfoFor(type) {
         if (type && streamProcessorDict && streamProcessorDict[type]) {
             const streamInfo = streamProcessorDict[type].getStreamInfo();
+            console.log(streamInfo);
             if (streamInfo && streamInfo.id) {
                 const idx = getTopQualityIndexFor(type, streamInfo.id);
                 const bitrates = getBitrateList(streamProcessorDict[type].getMediaInfo());
@@ -301,6 +301,7 @@ function AbrController() {
     }
 
     function checkPlaybackQuality(type) {
+        //@chanper: streamProcessorDict/switchHistoryDict = {video, audio}
         if (type && streamProcessorDict && streamProcessorDict[type]) {
             const streamInfo = streamProcessorDict[type].getStreamInfo();
             const streamId = streamInfo ? streamInfo.id : null;
@@ -316,27 +317,33 @@ function AbrController() {
                 videoModel
             });
 
+            //@chanper: push {droppedVideoFrames: 0, totalVideoFrames} normally
             if (droppedFramesHistory) {
                 const playbackQuality = videoModel.getPlaybackQuality();
                 if (playbackQuality) {
                     droppedFramesHistory.push(playbackIndex, playbackQuality);
                 }
             }
+
+            //@chanper: enter
             if (!!settings.get().streaming.abr.autoSwitchBitrate[type]) {
+                //@chanper: minIdx = undefined
                 const minIdx = getMinAllowedIndexFor(type);
+                //@chanper: For BBB, topQualities = {video = 9, audio = 0}
                 const topQualityIdx = getTopQualityIndexFor(type, streamId);
                 const switchRequest = abrRulesCollection.getMaxQuality(rulesContext);
                 let newQuality = switchRequest.quality;
                 if (minIdx !== undefined && ((newQuality > SwitchRequest.NO_CHANGE) ? newQuality : oldQuality) < minIdx) {
                     newQuality = minIdx;
                 }
+
                 if (newQuality > topQualityIdx) {
                     newQuality = topQualityIdx;
                 }
 
                 switchHistoryDict[type].push({oldValue: oldQuality, newValue: newQuality});
-
                 if (newQuality > SwitchRequest.NO_CHANGE && newQuality != oldQuality) {
+                    // @chanper: abandonmentStateDict = {video/audio.state = allowload};
                     if (abandonmentStateDict[type].state === MetricsConstants.ALLOW_LOAD || newQuality > oldQuality) {
                         changeQuality(type, oldQuality, newQuality, topQualityIdx, switchRequest.reason);
                     }
@@ -361,6 +368,7 @@ function AbrController() {
     }
 
     function changeQuality(type, oldQuality, newQuality, topQualityIdx, reason) {
+        console.log('Changing from ' + oldQuality + ' to ' + newQuality + ', reason: ' + reason);
         if (type && streamProcessorDict[type]) {
             const streamInfo = streamProcessorDict[type].getStreamInfo();
             const id = streamInfo ? streamInfo.id : null;
@@ -417,6 +425,7 @@ function AbrController() {
 
         for (let i = bitrateList.length - 1; i >= 0; i--) {
             const bitrateInfo = bitrateList[i];
+            //@chanper: choose the minimum bitrate that over specified bitrate
             if (bitrate * 1000 >= bitrateInfo.bitrate) {
                 return i;
             }
@@ -473,11 +482,13 @@ function AbrController() {
     }
 
     function _updateDynamicAbrStrategy(mediaType, bufferLevel) {
+        //@chanper: stableBufferTime = 12 default,
         const stableBufferTime = mediaPlayerModel.getStableBufferTime();
         const switchOnThreshold = stableBufferTime;
         const switchOffThreshold = 0.5 * stableBufferTime;
 
         const useBufferABR = isUsingBufferOccupancyABRDict[mediaType];
+        //@chanper: bufferlLevel is large enough then use BBA
         const newUseBufferABR = bufferLevel > (useBufferABR ? switchOffThreshold : switchOnThreshold); // use hysteresis to avoid oscillating rules
         isUsingBufferOccupancyABRDict[mediaType] = newUseBufferABR;
 

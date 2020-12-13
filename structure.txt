@@ -1,0 +1,36 @@
+build:  构建生成文件
+contrib:其他项目贡献组件，如akamai的播放器控制条
+dist:   用于发布的最终最小化和链接后的文件
+docs:   diagrams:   设计图、uml
+        migration:  迁移指南
+externals:  外部库
+samples:  样例页面    
+src:
+        -core
+                -errors
+                -events
+                -Debug.js
+                -EventBus.js
+                -FactoryMaker.js: 单例工厂
+        -dash
+                -models
+                    -DashManifestModel.js: MPD信息处理
+                -DashAdapter: Dash相关信息处理
+                
+        -streaming
+                -controllers
+                        -AbrController
+                        -MediaController
+                -models
+                        -MediaPlayerModel.js: 播放器相关控制模型
+                        -VideoModel.js: 视频控制模型
+                        -URIFragmentModel: 管理URI　Fragment
+                -net
+                        -SchemeLoaderFactory: Choose right url loader for scheme
+                -rules
+                        -ThroughputHistory.js:吞吐量历史信息
+                -MediaPlayer.js: addABRCustomRule(), getAverageThroughput()
+test:   测试代码
+
+
+12.5: samples看到dash-if-reference-player

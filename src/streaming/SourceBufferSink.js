@@ -141,6 +141,7 @@ function SourceBufferSink(mediaSource, mediaInfo, onAppendedCallback, oldBuffer)
         return buffer;
     }
 
+    // Returns the time ranges that are currently buffered in the SourceBuffer.
     function getAllBufferRanges() {
         try {
             return buffer.buffered;
@@ -258,6 +259,7 @@ function SourceBufferSink(mediaSource, mediaInfo, onAppendedCallback, oldBuffer)
                 // Safari sometimes drops a portion of a buffer after appending. Handle these situations here
                 const newRanges = getAllBufferRanges();
                 checkBufferGapsAfterAppend(sourceBufferSink, oldRanges, newRanges, nextChunk);
+                //@chanper: appendQueue = []
                 if (appendQueue.length > 0) {
                     appendNextInQueue.call(this);
                 } else {
